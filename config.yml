@@ -1,0 +1,11 @@
+bot:
+  token: <INSERT API TOKEN OF YOUR TELEGRAM BOT>
+  username: <INSERT USERNAME OF YOU BOT>
+
+user:
+  tg_id: <INSERT YOUR TELEGRAM USER ID>
+
+workflowy:
+  username: <INSERT YOUR WORKFLOWY USERNAME>
+  password: <INSERT YOUR WORKFLOWY PASSWORD>
+

@@ -1,0 +1,4 @@
+start - says hello
+stop - says bye
+wf - run opusfluxus workflowy library with the given arguments
+help - show opusfluxus CLI API help
