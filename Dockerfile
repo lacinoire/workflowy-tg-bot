@@ -1,7 +1,7 @@
 FROM timbru31/ruby-node:latest
 
 RUN npm --global config set user root && \
-    npm --global install opusfluxus@0.4.3
+    npm --global install workflowy-cli@latest
 
 ENV PATH="/usr/local/bin:${PATH}"
 
