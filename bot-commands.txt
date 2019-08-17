@@ -1,4 +1,8 @@
 start - says hello
 stop - says bye
-wf - run workflowy-cli library with the given arguments
+wf - run workflowy-cli library directly with the given arguments
 help - show workflowy-cli API help
+tree - show workflowy list: [depth <n>] [ids] [notes] [completed] (<alias/id>|root)
+alias - handle aliases: add <name> <id>, list, rm <name>
+add - add item to workflowy: [top/bottom/<postion>] <parentid/alias> <text>
+addnote - add item with note: [top/bottom/<postion>] <parentid/alias> "<text>" "<note>"
