@@ -51,7 +51,7 @@ def handle_tree_command(text, bot)
     when 'notes'
       run_command += ' --withnote'
     when 'completed'
-      run_command.sub(' --hiddencompleted', '')
+      run_command = run_command.sub(' --hiddencompleted', '')
     else
       parsed_all_options = true
       # rejoin
