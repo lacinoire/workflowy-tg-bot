@@ -164,7 +164,10 @@ if $PROGRAM_NAME == __FILE__
         continue_processing, command, text = preprocess_message(message, bot)
         next unless continue_processing
 
-        next if text.nil? && command != '/alias'
+        if text.nil? && ['/tree', '/add', '/addnote'].include?(command)
+          bot.api.send_message(chat_id: message.chat.id, text: 'This command needs an argument')
+          next
+        end
 
         reply = case command
                 when '/start'
