@@ -178,7 +178,7 @@ if $PROGRAM_NAME == __FILE__
                 when '/add'
                   handle_add_command(text, bot, false)
                 when '/addnote'
-                  hadle_add_command(text, bot, true)
+                  handle_add_command(text, bot, true)
                 when '/wf'
                   # running commandline wf with just the plain given command
                   `wf #{text}`
