@@ -121,7 +121,7 @@ def handle_add_command(text, bot, withnote)
     text_to_add, note = text_and_note.split('" "', 2)
     text_to_add = text_to_add[1, note.length] if text_to_add.start_with?('"')
     note = note[0, note.length - 1] if (note || '').end_with?('"')
-    call_wf("#{run_command} --partenid=#{parentnode} --name=\"#{text_to_add}\" --note=\"#{note}\"", bot)
+    call_wf("#{run_command} --parentid=#{parentnode} --name=\"#{text_to_add}\" --note=\"#{note}\"", bot)
   else
     parentnode, text_to_add = rest.split(' ', 2)
     call_wf("#{run_command} --parentid=#{parentnode} --name=\"#{text_to_add}\"", bot)
@@ -178,7 +178,7 @@ if $PROGRAM_NAME == __FILE__
                 when '/add'
                   handle_add_command(text, bot, false)
                 when '/addnote'
-                  hadle_add_command(text, bot, true)
+                  handle_add_command(text, bot, true)
                 when '/wf'
                   # running commandline wf with just the plain given command
                   `wf #{text}`
